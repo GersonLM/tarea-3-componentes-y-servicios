@@ -1,0 +1,22 @@
+<!-- modal para mostrar los componentes -->
+<div class="modal fade"  id="modalComponentes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel">Componentes de {{medicamentoRecebido.nombre}}</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="mt-1">
+        <ul class="m-auto d-flex flex-column justify-content-center" style="width: 76%;" *ngIf="medicamentoRecebido">
+          <li *ngFor="let com of medicamentoRecebido.componentes">{{com}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div><!-- fin modal para mostrar los componentes -->

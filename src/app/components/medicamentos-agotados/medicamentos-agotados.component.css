@@ -1,0 +1,13 @@
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
